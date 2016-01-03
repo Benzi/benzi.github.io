@@ -6,35 +6,37 @@
 	<link href="https://ssl.benzi.io/assets/images/favicon.ico" rel="icon" type="image/ico">
 	<link href="https://ssl.benzi.io/assets/fonts/rubrik/css.css" rel="stylesheet" type="text/css">
 	<style type="text/css">
-	.container {
-		position: absolute;
-		width: 500px;
-		height: 500px;
-		top: 50%;
-		left: 50%;
-		margin: -250px 0 0 -250px;
-	}
-	h1 {
-		font: 50px/450px rubrik_light;
-		color: #0a0a0a;
-		text-align: center;
-	}
-	a {
-		text-decoration: none;
-		color: #0a0a0a;
-	}
-	a:visited {
-		color: #0a0a0a;
-	}
-	span {
-		color: #ff003d;
-	}
+		html, body {
+		  height: 100%;
+		  margin: 0px;
+		  padding: 0px;
+		  overflow: hidden;
+		  background: #FFF;
+		  font-family: rubrik_light;
+		}
+		#title {
+			font-size: 5vw;
+			color: #EEE;
+			text-align: center;
+			left: 0;
+			line-height: 50px;
+			margin: auto;
+			margin-top: -25px;
+			position: absolute;
+			top: 50%;
+			width: 100%;
+		}
+		span {
+			color: #FF0066;
+		}
+		a, a:visited {
+			text-decoration: none;
+			color: #0A0A0A;
+		}
 	</style>
 	<title>code</title>
 </head>
 <body>
-	<div class="container">
-		<h1><a href="http://git.io/benzi">git.io<span>/benzi</span></a></h1>
-	</div>
+	<div id="title"><a href="http://git.io/benzi">git.io<span>/benzi</span></a></div>
 </body>
 </html>
