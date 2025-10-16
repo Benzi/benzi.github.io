@@ -3,12 +3,13 @@ html, body {
   margin: 0px;
   padding: 0px;
   overflow: hidden;
-  background: #FFF;
+  background: #000;
   font-family: rubrik_light;
 }
+
 #title {
-	font-size: 5vw;
-	color: #EEE;
+	font-size: 3em;
+	color: #fff;
 	text-align: center;
 	left: 0;
 	line-height: 50px;
@@ -18,10 +19,52 @@ html, body {
 	top: 50%;
 	width: 100%;
 }
-span {
-	color: #FF0066;
-}
+
 a, a:visited {
 	text-decoration: none;
-	color: #0A0A0A;
+	color: #0a0a0a;
+}
+
+.container {
+	height: 100vh;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.wave {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 3s; /* Change to speed up or slow down */
+  animation-iteration-count: 1; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
 }
